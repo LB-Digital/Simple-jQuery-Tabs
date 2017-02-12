@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#stats").hide();
+            $("#pvpfeed").hide();
+            $("#posts").hide();
+
+            $("#showStats").click(function(){
+                $("#stats").show();
+                $("#pvpfeed").hide();
+                $("#posts").hide();
+            });
+            $("#showPvpfeed").click(function(){
+                $("#stats").hide();
+                $("#pvpfeed").show();
+                $("#posts").hide();
+            });
+            $("#showPosts").click(function(){
+                $("#stats").hide();
+                $("#pvpfeed").hide();
+                $("#posts").show();
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button id="showStats">Stats</button>
+<button id="showPvpfeed">PvP Feed</button>
+<button id="showPosts">Posts</button>
+
+
+<div id='stats'>
+    Stats go hereeee!!
+</div>
+
+<div id='pvpfeed'>
+    This is the PvP Feed :)
+</div>
+
+<div id='posts'>
+    This is uhmmmmm, the posts
+</div>
+
+
+</body>
+</html>
